@@ -1,5 +1,5 @@
 # Stage 0 - Build Frontend Assets
-FROM node:12.16.3-alpine as build
+FROM node:20.4.0-alpine3.18 as build
 
 WORKDIR /app
 COPY package*.json ./
@@ -8,7 +8,7 @@ COPY . .
 RUN npm run build
 
 # Stage 1 - Serve Frontend Assets
-FROM fholzer/nginx-brotli:v1.12.2
+FROM fholzer/nginx-brotli:v1.23.4
 
 WORKDIR /etc/nginx
 ADD nginx.conf /etc/nginx/nginx.conf
