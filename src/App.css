@@ -1,5 +1,6 @@
 nav {
-	background-color: pink;
+	--color-nav: #1e1e1e;
+
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -7,6 +8,7 @@ nav {
 	padding: 0 1rem;
 	height: 3rem;
 	width: 100%;
+	background-color: var(--color-nav);
 }
 
 .nav-collection,
@@ -46,7 +48,7 @@ nav a:hover {
 	position: absolute;
 	bottom: calc(0 - 100%);
 	left: 0;
-	background-color: pink;
+	background-color: var(--color-nav);
 	min-width: 100%;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;

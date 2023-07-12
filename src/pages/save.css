@@ -1,0 +1,101 @@
+#save {
+	position: relative;
+	height: 100dvh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+#save * {
+	transition: none;
+}
+
+#save path {
+	fill: transparent;
+}
+
+#save text {
+	fill: #ff9800;
+}
+
+#save-information {
+	display: grid;
+	place-content: center;
+	flex: 1;
+	gap: 2rem;
+	text-align: center;
+}
+
+#save-information h1 {
+	font-family: 'Xanh Mono', cursive;
+	font-size: 10vw;
+	line-height: 10vw;
+}
+
+#save-information::before,
+#save-information::after {
+	content: '';
+	height: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+	--s: 30px; /* control the size */
+
+	--_c: #5e9fa3;
+	background: conic-gradient(at 50% calc(100% / 6), var(--_c) 60deg, #0000 0), conic-gradient(at calc(100% / 6) 50%, #0000 240deg, var(--_c) 0),
+		conic-gradient(from 180deg at calc(100% / 6) calc(500% / 6), var(--_c) 60deg, #0000 0), conic-gradient(from 180deg at calc(500% / 6), #0000 240deg, var(--_c) 0) calc(4 * 0.866 * var(--s)) 0,
+		repeating-linear-gradient(-150deg, #b05574 0 calc(100% / 6), #0000 0 50%), repeating-linear-gradient(-30deg, #b39c82 0 calc(100% / 6), #dcd1b4 0 50%);
+	background-size: calc(6 * 0.866 * var(--s)) calc(3 * var(--s));
+}
+
+#save-information::before {
+	rotate: 180deg;
+}
+
+#save-information h2 {
+	font-family: 'Xanh Mono', cursive;
+	font-size: 3vw;
+}
+
+#save-information p {
+	font-family: 'Xanh Mono', cursive;
+	font-size: 2vw;
+}
+
+#save-date {
+	font-family: 'Xanh Mono', cursive;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: space-between;
+}
+
+#save-date div {
+	font-size: 40vh;
+	line-height: 30vh;
+}
+
+.flower-orange path {
+	fill: #ff9800 !important;
+}
+
+.flower-green path {
+	fill: #4caf50 !important;
+}
+
+.flower-blue path {
+	fill: #2196f3 !important;
+}
+
+.flower-indigo path {
+	fill: #3f51b5 !important;
+}
+
+@media screen and (width <= 1280px) {
+	#save {
+		flex-direction: column;
+	}
+	#save-date {
+		display: none;
+	}
+}
