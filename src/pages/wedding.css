@@ -1,0 +1,92 @@
+.page-width:before {
+	display: block;
+	content: ' ';
+	margin-top: 5rem;
+	height: 5rem;
+	visibility: hidden;
+}
+
+#wedding {
+	margin: 0 max(10rem, 15vw);
+	padding: 5rem 0;
+}
+
+.wedding-header {
+	text-align: center;
+}
+
+.wedding-header h1 {
+	margin-bottom: 5rem;
+}
+
+#wedding img {
+	border-radius: 8px;
+}
+
+.wedding-information {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+	margin: 5rem auto 0;
+	align-items: center;
+}
+
+.wedding-carousel {
+	text-align: right;
+}
+
+.wedding-information-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 70ch;
+}
+
+#wedding a:not(.button) {
+	text-decoration: underline;
+}
+
+#wedding a:not(.button):hover {
+	font-weight: bold;
+}
+
+#wedding > div {
+	margin-bottom: 10rem;
+}
+
+#wedding-map {
+	margin-top: 5rem;
+}
+
+#wedding table {
+	border-collapse: collapse;
+	width: 30ch;
+	margin-top: 5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#wedding table td,
+#wedding table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+#wedding-rsvp {
+	display: grid;
+	place-content: center;
+}
+
+#wedding-rsvp .button {
+	padding: 1rem 6rem;
+	outline: 10px solid #1e1e1e;
+	outline-offset: 2px;
+}
+
+#registry .registry-information {
+	display: grid;
+	place-items: center;
+	max-width: 60ch;
+	margin: 5rem auto 0;
+}

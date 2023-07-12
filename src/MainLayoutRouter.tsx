@@ -1,42 +1,51 @@
 import { Routes, Route, Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import './App.css';
 import { Home } from './pages/home';
+import { Wedding } from './pages/wedding';
 
 export const MainLayoutRouter = () => {
-	alert("You caught me, I'm still making the rest of the site. Check back soon though! -Konrad");
+	console.log('test');
+	// alert("You caught me, I'm still making the rest of the site. Check back soon though! -Konrad");
 	return (
 		<div className="App">
 			<nav>
 				<Link to="/">Home</Link>
 				<div className="nav-collection">
-					<div className="nav-summary">Wedding</div>
+					<Link className="nav-summary" to="/wedding">
+						Wedding
+					</Link>
 					<div className="nav-content">
-						<Link className="nav-child" to="/venue">
+						<HashLink className="nav-child" to="/wedding#venue">
 							Venue
-						</Link>
-						<Link className="nav-child" to="/schedule">
-							Schedule
-						</Link>
-
-						<Link className="nav-child" to="/accommodations">
+						</HashLink>
+						<HashLink className="nav-child" to="/wedding#accommodations">
 							Accommodations
-						</Link>
-						<Link className="nav-child" to="/transportation">
+						</HashLink>
+						<HashLink className="nav-child" to="/wedding#transportation">
 							Transportation
-						</Link>
-						<Link className="nav-child" to="/attire">
+						</HashLink>
+						<HashLink className="nav-child" to="/wedding#attire">
 							Attire
-						</Link>
-						<Link className="nav-child" to="/things-to-do">
+						</HashLink>
+						<HashLink className="nav-child" to="/wedding#schedule">
+							Schedule
+						</HashLink>
+						<HashLink className="nav-child" to="/wedding#things-to-do">
 							Things to Do
-						</Link>
+						</HashLink>
+						<HashLink className="nav-child" to="/wedding#registry">
+							Gift Registry
+						</HashLink>
 					</div>
 				</div>
 				<Link to="/rsvp">RSVP</Link>
 				<Link to="/photos">Photos</Link>
+				<p>Konrad & Maggie</p>
 			</nav>
 			<Routes>
 				<Route path="/" element={<Home />} />
+				<Route path="/wedding/*" element={<Wedding />} />
 			</Routes>
 		</div>
 	);

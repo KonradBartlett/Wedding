@@ -1,6 +1,8 @@
 nav {
 	--color-nav: #1e1e1e;
 
+	position: fixed;
+
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -65,4 +67,41 @@ nav a:hover {
 .nav-collection:hover .nav-content,
 .nav-content:hover {
 	display: flex;
+}
+
+nav p {
+	color: white;
+	margin-left: auto;
+}
+
+#wedding h1 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Xanh Mono', cursive;
+	font-size: 10vw;
+	line-height: 10vw;
+}
+
+h2 {
+	font-family: 'Space Mono', cursive;
+	font-size: 3vw;
+}
+
+.button {
+	background-color: #1e1e1e;
+	color: white;
+	padding: 0.5rem 1rem;
+	text-align: center;
+	outline: 2px solid #1e1e1e;
+	outline-offset: 2px;
+}
+
+.button:hover {
+	transform: scale(1.05);
+}
+
+.button:active {
+	transform: scale(0.95);
 }
