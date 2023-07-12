@@ -1,14 +1,18 @@
-FROM node:18-alpine3.17 as build
+# Stage 0 - Build Frontend Assets
+FROM node:20.4.0-alpine3.18 as build
 
 WORKDIR /app
-COPY . /app
-
+COPY package*.json ./
 RUN npm install
+COPY . .
 RUN npm run build
 
-FROM ubuntu
-RUN apt-get update
-RUN apt-get install nginx -y
-COPY --from=build /app/dist /var/www/html/
+# Stage 1 - Serve Frontend Assets
+FROM fholzer/nginx-brotli:v1.23.4
+
+WORKDIR /etc/nginx
+ADD nginx.conf /etc/nginx/nginx.conf
+
+COPY --from=build /app/dist /usr/share/nginx/html
 EXPOSE 443
-CMD ["nginx","-g","daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
