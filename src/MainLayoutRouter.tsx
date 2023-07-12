@@ -1,7 +1,9 @@
 import { Routes, Route, Link } from 'react-router-dom';
 import './App.css';
+import { Home } from './pages/home';
 
 export const MainLayoutRouter = () => {
+	alert("You caught me, I'm still making the rest of the site. Check back soon though! -Konrad");
 	return (
 		<div className="App">
 			<nav>
@@ -39,12 +41,3 @@ export const MainLayoutRouter = () => {
 		</div>
 	);
 };
-
-function Home() {
-	return (
-		<div>
-			<h1>Home</h1>
-			<p>Home page body content</p>
-		</div>
-	);
-}
