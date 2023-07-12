@@ -1,4 +1,4 @@
-FROM node:18-apline
+FROM node:latest
 
 WORKDIR /app
 COPY package*.json ./
@@ -7,7 +7,7 @@ COPY . .
 RUN npm run build
 
 # Stage 1 - Serve Frontend Assets
-FROM fholzer/nginx-brotli:v1.12.2
+FROM nginx:latest
 
 WORKDIR /etc/nginx
 ADD nginx.conf /etc/nginx/nginx.conf
