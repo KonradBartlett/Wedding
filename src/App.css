@@ -11,6 +11,7 @@ nav {
 	height: 3rem;
 	width: 100%;
 	background-color: var(--color-nav);
+	z-index: 100;
 }
 
 .nav-collection,
@@ -80,13 +81,16 @@ nav p {
 
 h1 {
 	font-family: 'Xanh Mono', cursive;
-	font-size: 10vw;
+	font-size: var(--fs-5);
 	line-height: 10vw;
 }
 
 h2 {
 	font-family: 'Space Mono', cursive;
-	font-size: 3vw;
+	font-size: var(--fs-0);
+}
+
+p {
 }
 
 .button {

@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gaxios": "^6.0.0",
+    "google-photos-album-image-url-fetch": "^3.1.0",
+    "google-photos-yoinker": "^1.1.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.1",

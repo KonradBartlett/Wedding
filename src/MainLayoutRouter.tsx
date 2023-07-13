@@ -3,9 +3,9 @@ import { HashLink } from 'react-router-hash-link';
 import './App.css';
 import { Home } from './pages/home';
 import { Wedding } from './pages/wedding';
+import { Photos } from './pages/photos';
 
 export const MainLayoutRouter = () => {
-	console.log('test');
 	// alert("You caught me, I'm still making the rest of the site. Check back soon though! -Konrad");
 	return (
 		<div className="App">
@@ -45,7 +45,8 @@ export const MainLayoutRouter = () => {
 			</nav>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/wedding/*" element={<Wedding />} />
+				<Route path="/wedding" element={<Wedding />} />
+				<Route path="/photos" element={<Photos />} />
 			</Routes>
 		</div>
 	);
