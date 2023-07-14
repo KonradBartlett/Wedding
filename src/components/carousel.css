@@ -1,0 +1,54 @@
+.carousel-wrapper {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.carousel-image-wrapper {
+	display: flex;
+	gap: 1rem;
+	position: relative;
+	overflow: hidden;
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-type: x mandatory;
+
+	padding: 30px;
+	border-radius: 1rem;
+}
+
+.carousel-image-wrapper::-webkit-scrollbar {
+	display: none;
+}
+
+.carousel-image {
+	scroll-snap-align: center;
+	object-fit: cover;
+}
+
+.carousel-left,
+.carousel-right {
+	cursor: pointer;
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 1px;
+	width: 30px;
+	height: 30px;
+}
+
+.carousel-left {
+	rotate: 135deg;
+}
+.carousel-right {
+	rotate: -45deg;
+}
+
+:is(.carousel-left, .carousel-right):hover {
+	scale: 1.1;
+}
+
+:is(.carousel-left, .carousel-right):active {
+	scale: 0.9;
+}
