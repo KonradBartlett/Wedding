@@ -7,7 +7,7 @@ export const Wedding = () => {
 		<div id="wedding">
 			<div className="wedding-header">
 				<h1>JUNE 1st 2024</h1>
-				<h3>We're so excited for you to be a part of our wedding, below you will find information about the event.</h3>
+				<h3>We're so excited for you to be a part of our wedding; below you will find information about the event.</h3>
 			</div>
 			<div id="venue" className="page-width">
 				<h1>Venue</h1>
@@ -28,7 +28,7 @@ export const Wedding = () => {
 						<p>A bonfire will be lit after the reception for those who wish to stay and enjoy the evening.</p>
 						<p>There will be lawn games, and some arcade cabinets at the wedding so be sure to challenge each other to see who's the best at throwing bean bags into a small hole.</p>
 						<h2>Drinks!</h2>
-						<p>If you're of the age, there will be an open bar! Beer, wine, cocktails, whatever you want you can just walk up to the bar and ask for it.</p>
+						<p>If you legally can, there will be an open bar! Beer, wine, cocktails, whatever you want you can just walk up to the bar and ask for it.</p>
 						<p>There will also be a number of non-alcoholic options available.</p>
 						<p>At TBDpm there will be a cocktail hour, and of course because we're on a farm some of the staff are going to bring out alpacas to hangout and chat with.</p>
 						<iframe
@@ -40,7 +40,7 @@ export const Wedding = () => {
 							referrerPolicy="no-referrer-when-downgrade"
 						></iframe>
 					</div>
-					<Carousel width={800} height={1000} images={['/venue/venue.jpg', '/venue/venue2.jpg', '/venue/venue3.jpg', '/venue/venue4.jpg', '/venue/venue5.jpg']} />
+					<Carousel images={['/venue/venue.jpg', '/venue/venue2.jpg', '/venue/venue3.jpg', '/venue/venue4.jpg', '/venue/venue5.jpg']} />
 				</div>
 			</div>
 			<div id="accommodations" className="page-width">
@@ -67,7 +67,7 @@ export const Wedding = () => {
 							have to drive too far.
 						</p>
 					</div>
-					<Carousel width={800} height={1000} images={['/hotel/holiday-inn.jpg', '/hotel/best-western-inn.jpg', '/hotel/hampton-inn.jpg']} />
+					<Carousel images={['/hotel/holiday-inn.jpg', '/hotel/best-western-inn.jpg', '/hotel/hampton-inn.jpg']} />
 				</div>
 			</div>
 			<div id="transportation" className="page-width">
@@ -96,11 +96,7 @@ export const Wedding = () => {
 						<p>There is parking available at the venue, however we strongly encourage you to take the shuttle bus if you can.</p>
 						<p>If you're driving to the event be sure to have a designated driver and to drive safe!</p>
 					</div>
-					<Carousel
-						width={800}
-						height={1000}
-						images={['/transportation/bus.jpg', '/transportation/bus2.jpg', '/transportation/parking.jpg', '/transportation/parking2.jpg', '/transportation/train.jpg']}
-					/>
+					<Carousel images={['/transportation/bus.jpg', '/transportation/bus2.jpg', '/transportation/parking.jpg', '/transportation/parking2.jpg', '/transportation/train.jpg']} />
 				</div>
 			</div>
 			<div id="attire" className="page-width">
@@ -204,14 +200,14 @@ export const Wedding = () => {
 							<li>Street Fighter 2</li>
 							<li>Teenage Mutant Ninja Turtles</li>
 						</ul>
-						<p>In addition to arcade games, tThere will be a number of lawn games available at the wedding including:</p>
+						<p>In addition to arcade games, there will be a number of lawn games available at the wedding including:</p>
 						<ul>
 							<li>Cornhole</li>
 							<li>Washers</li>
 							<li>Beer Pong</li>
 						</ul>
 					</div>
-					<Carousel width={800} height={1000} images={['/todo/sf2.jpg', '/todo/pedalboro.jpg', '/todo/liftlock.jpg']} />
+					<Carousel images={['/todo/sf2.jpg', '/todo/pedalboro.jpg', '/todo/liftlock.jpg']} />
 				</div>
 			</div>
 			<div id="registry" className="page-width">
@@ -219,7 +215,7 @@ export const Wedding = () => {
 				<div className="registry-information">
 					<p>Wedding gifts are not required but they are certainly welcome! If you decide on a gift please try to keep it small as we will have to ship it over to Surrey BC.</p>
 					<p>
-						Our registry can be found at <Link to="https://www.amazon.ca/wedding/share/andrewandkristen">Amazon.ca</Link>
+						Our registry can be found at <Link to="">A link</Link>
 					</p>
 				</div>
 			</div>
